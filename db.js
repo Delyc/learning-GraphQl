@@ -57,6 +57,7 @@ const products = [
     price: 59.99,
     image: "img-6",
     onSale: true,
+    categoryId: "d914aec0-25b2-4103-9ed8-225d39018d1d",
   },
   {
     id: "a4824a31-5c83-42af-8c1b-6e2461aae1ef",
@@ -90,7 +91,7 @@ const products = [
   },
 ];
 
-const categories = [
+let categories = [
   {
     id: "c01b1ff4-f894-4ef2-b27a-22aacc2fca70",
     name: "Kitchen",
@@ -285,8 +286,8 @@ const reviews = [
   },
 ];
 
-module.exports = {
+exports.db = {
   products,
   categories,
-  reviews
+  reviews,
 };
